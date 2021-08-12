@@ -8,9 +8,19 @@ function solve(minutes) {
             minutes -= 60;
         }
     }
+
+    if (hour < 10) {
+        hour = "0" + hour;
+    }
+
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+
     console.log(hour + ":" + minutes);
 }
 
 solve(60);
 solve(90);
 solve(325);
+solve(69);
